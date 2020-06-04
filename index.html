@@ -11,6 +11,7 @@
   <div class="observablehq-setMainDisplay" style="display: none;"></div>
   <div class="observablehq-populationCallback" style="display: none;"></div>
   <div class="observablehq-overlayCallback" style="display: none;"></div>
+  <div class="observablehq-hide" style="display: none;"></div>
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -24,5 +25,6 @@
     if (name === "setMainDisplay") return Inspector.into("#observablehq-da79df31 .observablehq-setMainDisplay")();
     if (name === "populationCallback") return Inspector.into("#observablehq-da79df31 .observablehq-populationCallback")();
     if (name === "overlayCallback") return Inspector.into("#observablehq-da79df31 .observablehq-overlayCallback")();
+    if (name === "popups") return Inspector.into("#observablehq-da79df31 .observablehq-hide")();
   });
 </script>
