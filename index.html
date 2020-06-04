@@ -3,28 +3,30 @@
 <title>Coral Vivo Diorama</title>
 <link rel="stylesheet" type="text/css" href="./inspector.css">
 <body style="max-width:1024px;width:1024px;margin:0 auto;"> 
- <div id="observablehq-da79df31">
+ 
+<div id="observablehq-ce95a734">
   <div class="observablehq-title"></div>
   <div class="observablehq-mainDisplay"></div>
   <div class="observablehq-chart"></div>
+  <div class="observablehq-popups"></div>
   <div class="observablehq-styles"></div>
-  <div class="observablehq-setMainDisplay" style="display: none;"></div>
-  <div class="observablehq-populationCallback" style="display: none;"></div>
-  <div class="observablehq-overlayCallback" style="display: none;"></div>
-  <div class="observablehq-hide" style="display: none;"></div>
+  <div class="observablehq-setMainDisplay"></div>
+  <div class="observablehq-populationCallback"></div>
+  <div class="observablehq-overlayCallback"></div>
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
   import define from "https://api.observablehq.com/d/494dea13608c9f5d.js?v=3";
-  //import define from "./index.js";
   (new Runtime).module(define, name => {
-    if (name === "title") return Inspector.into("#observablehq-da79df31 .observablehq-title")();
-    if (name === "mainDisplay") return Inspector.into("#observablehq-da79df31 .observablehq-mainDisplay")();
-    if (name === "chart") return Inspector.into("#observablehq-da79df31 .observablehq-chart")();
-    if (name === "styles") return Inspector.into("#observablehq-da79df31 .observablehq-styles")();
-    if (name === "setMainDisplay") return Inspector.into("#observablehq-da79df31 .observablehq-setMainDisplay")();
-    if (name === "populationCallback") return Inspector.into("#observablehq-da79df31 .observablehq-populationCallback")();
-    if (name === "overlayCallback") return Inspector.into("#observablehq-da79df31 .observablehq-overlayCallback")();
-    if (name === "popups") return Inspector.into("#observablehq-da79df31 .observablehq-hide")();
+    if (name === "title") return Inspector.into("#observablehq-ce95a734 .observablehq-title")();
+    if (name === "mainDisplay") return Inspector.into("#observablehq-ce95a734 .observablehq-mainDisplay")();
+    if (name === "chart") return Inspector.into("#observablehq-ce95a734 .observablehq-chart")();
+    if (name === "popups") return Inspector.into("#observablehq-ce95a734 .observablehq-popups")();
+    if (name === "styles") return Inspector.into("#observablehq-ce95a734 .observablehq-styles")();
+    if (name === "setMainDisplay") return Inspector.into("#observablehq-ce95a734 .observablehq-setMainDisplay")();
+    if (name === "populationCallback") return Inspector.into("#observablehq-ce95a734 .observablehq-populationCallback")();
+    if (name === "overlayCallback") return Inspector.into("#observablehq-ce95a734 .observablehq-overlayCallback")();
   });
 </script>
+ 
+</body>
